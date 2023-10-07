@@ -1,0 +1,14 @@
+.app__subheading h3{
+    font-family: var(--font-base);
+}
+.app__subheading h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    
+}
+.app__subheading .first{
+    width: fit-content;
+}
+.app__subheading .right{
+    text-align: right;
+}

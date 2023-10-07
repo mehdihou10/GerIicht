@@ -1,0 +1,60 @@
+footer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.app__footer-content{
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-top: 100px;
+}
+.app__footer-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px ,1fr));
+    gap: 50px;
+}
+.app__footer-links .info{
+text-align: center;
+}
+.app__footer-links .info h3{
+font-family: var(--font-base);
+color: var(--color-golden);
+font-size: 25px;
+}
+.app__footer-links .info p{
+color: var(--color-grey);
+font-family: var(--font-alt);
+font-size: 14px;
+}
+.app__footer-links .info:first-child p,.app__footer-links .info:nth-child(2) p{
+margin-block: 20px 10px;
+}
+.app__footer-links .info:last-child p:first-of-type{
+    margin-top: 20px;
+}
+.app__footer-links .info:last-child p:last-of-type{
+    margin-top: 10px;
+}
+.app__footer-links .info h1{
+font-family: var(--font-base);
+color: var(--color-golden);
+text-transform: uppercase;
+font-size: 50px;
+}
+.app__footer-links .info:nth-child(2) .social-media{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 15px;
+}
+.app__footer-links .info:nth-child(2) .social-media a{
+font-size: 20px;
+}
+.app__footer-content .copyright{
+    text-align: center;
+    color: white;
+    font-family: var(--font-alt);
+    font-size: 14px;
+    margin-top: 50px;
+}

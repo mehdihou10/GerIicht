@@ -1,0 +1,41 @@
+.app__about{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+@media(max-width: 991px){
+    .app__about{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+.app__about .g-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 390px;
+    z-index: -1;
+}
+@media(max-width: 575px){
+    .app__about .g-img{
+        width: 200px;
+    }
+}
+
+.app__about .app__about-text{
+    flex-basis: 40%;
+}
+.app__about .image img{
+    width: 85px;
+    height: 700px;
+}
+.app__about p{
+    font-family: var(--font-alt);
+    line-height: 2;
+    color: var(--color-grey);
+    margin-block: 50px;
+}

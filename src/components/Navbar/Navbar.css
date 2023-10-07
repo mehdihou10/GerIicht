@@ -1,0 +1,99 @@
+nav{
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+nav a{
+    color: white;
+    font-size: 14px;
+}
+
+nav .logo img{
+width: 150px;
+}
+
+nav .nav-ul ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media(max-width: 991px){
+    nav .nav-ul{
+        display: none;
+    }
+}
+
+nav ul a{
+    text-transform: capitalize;
+}
+
+nav .links a:first-child{
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+nav .links a:last-child{
+    padding-left: 10px;
+}
+
+@media(min-width: 992px){
+    nav .change-status{
+        display: none;
+    }
+}
+
+
+@media(max-width: 767px){
+    nav .sign-links{
+        display: none;
+    }
+}
+nav .change-status svg{
+font-size: 20px;
+cursor: pointer;
+position: relative;
+z-index: 10;
+}
+
+
+nav .nav-ul-device{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-ul-device a{
+    color: var(--color-golden);
+    font-size: 25px;
+    font-family: var(--font-base);
+}
+
+nav .nav-ul-device ul li{
+margin-bottom: 20px;
+}
+
+nav .nav-ul-device .sign-links-device a{
+display: block;
+border: none;
+text-align: center;
+padding: 0;
+}
+nav .nav-ul-device .sign-links-device a:first-child{
+    margin-bottom: 20px;
+}
+
+@media(min-width: 768px){
+    nav .nav-ul-device .sign-links-device{
+        display: none;
+    }
+}

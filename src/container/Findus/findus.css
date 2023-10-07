@@ -1,0 +1,37 @@
+.app__contact{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+@media(max-width: 767px){
+    .app__contact{
+        flex-direction: column;
+    }
+}
+
+.app__contact .text{
+flex: 1;
+}
+.app__contact .text p{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-size: 14px;
+}
+.app__contact .text p:first-of-type{
+    margin-block: 50px 30px;
+}
+.app__contact .text p:last-of-type{
+    margin-top: 20px;
+}
+.app__contact .text .open-hours{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    margin-bottom: 30px;
+}
+.app__contact .image{
+flex: 1;
+}
+.app__contact .image img{
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+.app__awards{
+color: white;
+}
+.app__awards .app__awards-content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+@media(max-width: 991px){
+    .app__awards .app__awards-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+.app__awards .app__awards-content .text{
+flex-basis: 45%;
+}
+.app__awards .app__awards-content .text .awards-items{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 50px;
+}
+.app__awards .app__awards-content .text .awards-items .item{
+display: flex;
+align-items: center;
+gap: 10px;
+flex-basis: calc((100% / 2) - 15px);
+}
+@media(max-width: 575px){
+    .app__awards .app__awards-content .text .awards-items .item{
+        flex-basis: 100%;
+    }
+}
+.app__awards .app__awards-content .text .awards-items .item img{
+width: 45px;
+height: 45px;
+}
+
+.app__awards .app__awards-content .text .awards-items .item .second h3{
+font-size: 23px;
+color: var(--color-golden);
+font-family: var(--font-base);
+margin-bottom: 10px;
+}
+.app__awards .app__awards-content .text .awards-items .item .second p{
+color: var(--color-grey);
+font-family: var(--font-alt);
+font-size: 14px;
+}
+
+.app__awards .app__awards-content .image{
+flex-basis: 40%;
+}
+.app__awards .app__awards-content .image img{
+    max-width: 100%;
+}

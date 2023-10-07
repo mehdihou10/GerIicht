@@ -1,0 +1,26 @@
+
+
+.app__header{
+justify-content: space-between;
+gap: 50px;    
+background: var(--color-black);
+color: white;
+}
+.app__header .app__header-text{
+flex-basis: 40%;
+}
+
+.app__header .app__header-text p{
+font-family: var(--font-alt);
+font-size: 14px;
+line-height: 1.6;
+margin-block: 30px;
+}
+
+
+.app__header .app__header-img{
+flex-basis: 50%;
+}
+.app__header .app__header-img img{
+    max-width: 100%;
+}

@@ -1,0 +1,91 @@
+.app__gallery{
+    background: var(--color-black);
+    color: white;
+    display: flex;
+    gap: 50px;
+}
+@media(max-width: 700px){
+    .app__gallery{
+        flex-direction: column;
+    }
+}
+
+.app__gallery .app__gallery-text p{
+    color: var(--color-grey);
+    font-family: var(--font-alt);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-block: 30px 20px;
+}
+.app__gallery-slider{
+
+ flex: 1;
+ max-width: 50%;
+ position: relative;
+}
+@media(max-width: 700px){
+    .app__gallery-slider{
+        max-width: 100%;
+    }
+}
+
+.app__gallery-slider-container{
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.app__gallery-slider-container::-webkit-scrollbar{
+    display: none;
+}
+.app__gallery-slider .image{
+
+position: relative;
+
+
+}
+
+.app__gallery-slider .image img{
+
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.app__gallery-slider .image:hover img{
+    opacity: 0.35;
+}
+
+.app__gallery-slider .image .instagram-icon{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.app__gallery-slider .image:hover .instagram-icon{
+    opacity: 1;
+}
+.app__gallery-slider-arrows{
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 50px;
+margin-top: 30px;
+
+}
+.app__gallery-slider-arrows .arrow-icon{
+    background-color: #af8e13;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
